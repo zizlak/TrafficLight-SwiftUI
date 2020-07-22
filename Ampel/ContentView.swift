@@ -9,11 +9,58 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var count = 0
+
+//  MARK: Alfa
+    private var redAlfa: Double{
+        return count % 4 == 0 || count % 4 == 1 ? 1 : 0.3
+    }
+    
+    private var yelloAlfa: Double{
+        return count % 4 == 1 || count % 4 == 3 ? 1 : 0.3
+    }
+    
+    private var greenAlfa: Double{
+        return count % 4 == 2 ? 1 : 0.3
+    }
+    
+    
+    
+//  MARK: Body
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            ZStack {
+                BlackBox()
+                VStack {
+                    CircleAmpel(color: .red, alfaCircle: redAlfa)
+                    CircleAmpel(color: .yellow, alfaCircle: yelloAlfa)
+                    CircleAmpel(color: .green, alfaCircle: greenAlfa)
+                }
+                
+            }
+            Spacer()
+            
+            
+//  MARK: Button
+            Button(action: {self.count += 1}) {
+                     Text("  LIGHT  ")
+                         .font(.largeTitle)
+                         .bold()
+                 }
+                 .foregroundColor(.black)
+                 .background(Color(.systemOrange))
+             .clipShape(Capsule())
+            .overlay(Capsule().stroke(Color.white, lineWidth: 4))
+              .shadow(radius: 10)
+        }
+    .padding()
+    .padding()
+    
     }
 }
 
+
+//  MARK: Preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
