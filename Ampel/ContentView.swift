@@ -10,8 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State var count = 0
-
-//  MARK: Alfa
+    func action() {
+        self.count += 1
+    }
+    
+    //  MARK: Alfa
     private var redAlfa: Double{
         return count % 4 == 0 || count % 4 == 1 ? 1 : 0.3
     }
@@ -26,7 +29,7 @@ struct ContentView: View {
     
     
     
-//  MARK: Body
+    //  MARK: Body
     var body: some View {
         VStack {
             ZStack {
@@ -41,21 +44,14 @@ struct ContentView: View {
             Spacer()
             
             
-//  MARK: Button
-            Button(action: {self.count += 1}) {
-                     Text("  LIGHT  ")
-                         .font(.largeTitle)
-                         .bold()
-                 }
-                 .foregroundColor(.black)
-                 .background(Color(.systemOrange))
-             .clipShape(Capsule())
-            .overlay(Capsule().stroke(Color.white, lineWidth: 4))
-              .shadow(radius: 10)
+            //  MARK: Button
+            
+            ButtonLight(action: action)
+
         }
-    .padding()
-    .padding()
-    
+        .padding()
+        .padding()
+        
     }
 }
 

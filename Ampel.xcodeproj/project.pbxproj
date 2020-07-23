@@ -15,6 +15,7 @@
 		A07EA9E924C7666C00EEB3C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07EA9E724C7666C00EEB3C1 /* LaunchScreen.storyboard */; };
 		A07EA9FB24C8001300EEB3C1 /* BlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07EA9FA24C8001300EEB3C1 /* BlackBox.swift */; };
 		A07EA9FD24C8001D00EEB3C1 /* CircleAmpel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07EA9FC24C8001D00EEB3C1 /* CircleAmpel.swift */; };
+		A07EAA0524C9669700EEB3C1 /* ButtonLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07EAA0424C9669700EEB3C1 /* ButtonLight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A07EA9EA24C7666C00EEB3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A07EA9FA24C8001300EEB3C1 /* BlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBox.swift; sourceTree = "<group>"; };
 		A07EA9FC24C8001D00EEB3C1 /* CircleAmpel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAmpel.swift; sourceTree = "<group>"; };
+		A07EAA0424C9669700EEB3C1 /* ButtonLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A07EA9DC24C7666B00EEB3C1 /* AppDelegate.swift */,
 				A07EA9DE24C7666B00EEB3C1 /* SceneDelegate.swift */,
 				A07EA9E024C7666B00EEB3C1 /* ContentView.swift */,
+				A07EAA0424C9669700EEB3C1 /* ButtonLight.swift */,
 				A07EA9FA24C8001300EEB3C1 /* BlackBox.swift */,
 				A07EA9FC24C8001D00EEB3C1 /* CircleAmpel.swift */,
 				A07EA9E224C7666C00EEB3C1 /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07EAA0524C9669700EEB3C1 /* ButtonLight.swift in Sources */,
 				A07EA9DD24C7666B00EEB3C1 /* AppDelegate.swift in Sources */,
 				A07EA9FD24C8001D00EEB3C1 /* CircleAmpel.swift in Sources */,
 				A07EA9DF24C7666B00EEB3C1 /* SceneDelegate.swift in Sources */,
