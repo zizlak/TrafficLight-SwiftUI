@@ -28,7 +28,6 @@ struct ContentView: View {
     }
     
     
-    
     //  MARK: Body
     var body: some View {
         VStack {
@@ -39,19 +38,14 @@ struct ContentView: View {
                     CircleAmpel(color: .yellow, alfaCircle: yelloAlfa)
                     CircleAmpel(color: .green, alfaCircle: greenAlfa)
                 }
-                
             }
+            
             Spacer()
-            
-            
+          
             //  MARK: Button
-            
             ButtonLight(action: action)
-
         }
-        .padding()
-        .padding()
-        
+        .padding(.all, 40)
     }
 }
 
